@@ -1,6 +1,3 @@
-/* ═══════════════════════════════════════════════
-   TOKENS
-═══════════════════════════════════════════════ */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
 :root {
@@ -26,9 +23,9 @@
   --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-/* ═══════════════════════════════════════════════
-   RESET & BASE
-═══════════════════════════════════════════════ */
+/*RESET E BASE*/
+
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
@@ -62,9 +59,7 @@ a   { color: inherit; text-decoration: none; }
 ::-webkit-scrollbar-track { background: var(--ink-2); }
 ::-webkit-scrollbar-thumb { background: var(--blue-dark); border-radius: 3px; }
 
-/* ═══════════════════════════════════════════════
-   LAYOUT HELPERS
-═══════════════════════════════════════════════ */
+/*LAYOUT HELPERS*/
 .container {
   max-width: 1080px;
   margin: 0 auto;
@@ -102,9 +97,7 @@ a   { color: inherit; text-decoration: none; }
 
 .section-title .accent { color: var(--blue-light); }
 
-/* ═══════════════════════════════════════════════
-   NAVBAR
-═══════════════════════════════════════════════ */
+/* NAVBAR */
 .navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -201,9 +194,6 @@ a   { color: inherit; text-decoration: none; }
 .nav-toggle.open span:nth-child(2) { opacity: 0; }
 .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ═══════════════════════════════════════════════
-   HERO / APRESENTAÇÃO
-═══════════════════════════════════════════════ */
 .hero-section {
   min-height: 100vh;
   display: flex;
@@ -380,9 +370,7 @@ a   { color: inherit; text-decoration: none; }
 
 .hero-contato-item i { color: var(--blue-light); font-size: 1rem; }
 
-/* ═══════════════════════════════════════════════
-   TIMELINE (Formação)
-═══════════════════════════════════════════════ */
+/*TIMELINE*/
 .timeline {
   position: relative;
   padding-left: 32px;
@@ -472,9 +460,7 @@ a   { color: inherit; text-decoration: none; }
   line-height: 1.65;
 }
 
-/* ═══════════════════════════════════════════════
-   CURSOS & CERTIFICAÇÕES
-═══════════════════════════════════════════════ */
+/* CURSOS & CERTIFICAÇÕES═ */
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -556,9 +542,7 @@ a   { color: inherit; text-decoration: none; }
 .curso-meta span { display: flex; align-items: center; gap: 4px; }
 .curso-meta i { color: var(--blue-light); }
 
-/* ═══════════════════════════════════════════════
-   PROJETOS
-═══════════════════════════════════════════════ */
+/*PROJETOS*/
 .projects-controls {
   display: flex;
   flex-wrap: wrap;
@@ -736,9 +720,7 @@ a   { color: inherit; text-decoration: none; }
 
 .projetos-vazio i { font-size: 1.4rem; }
 
-/* ═══════════════════════════════════════════════
-   COMPETÊNCIAS
-═══════════════════════════════════════════════ */
+/* COMPETÊNCIAS */
 .competencias-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -791,9 +773,7 @@ a   { color: inherit; text-decoration: none; }
 
 .skill-card i { color: var(--blue-light); font-size: 1rem; flex-shrink: 0; }
 
-/* ═══════════════════════════════════════════════
-   LINKS PROFISSIONAIS
-═══════════════════════════════════════════════ */
+/* LINKS PROFISSIONAIS */
 .links-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -850,9 +830,7 @@ a   { color: inherit; text-decoration: none; }
   gap: 6px;
 }
 
-/* ═══════════════════════════════════════════════
-   FOOTER
-═══════════════════════════════════════════════ */
+/* FOOTER */
 .site-footer {
   border-top: 1px solid var(--wire);
   padding: 28px;
@@ -868,9 +846,7 @@ a   { color: inherit; text-decoration: none; }
 .site-footer i { color: var(--blue-light); }
 .site-footer span { color: var(--blue-light); }
 
-/* ═══════════════════════════════════════════════
-   ANIMAÇÕES
-═══════════════════════════════════════════════ */
+/* ANIMAÇÕES */
 @keyframes fadeIn {
   from { opacity: 0; }
   to   { opacity: 1; }

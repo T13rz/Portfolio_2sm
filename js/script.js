@@ -476,7 +476,6 @@ function iniciarNavbar() {
 
   //Adiciona classe para mudar aparência
   window.addEventListener("scroll", function () {
-    // ① if/else — muda estilo conforme posição
     if (window.scrollY > 40) {
       navbar.classList.add("scrolled");
     } else {
