@@ -39,14 +39,17 @@ const DADOS = {
 
   /* Cursos */
   cursos: [
-    { nome: "Fundamentos de Programação com Lingagem em C#",          categoria: "Profissionalizante",      carga: "40h",  ano: "2022" },
+    { nome: "Escola de Inovadores",                                   categoria: "Profissionalizante",      carga: "40h",  ano: "2025" },
+    { nome: "Introdução Ao SCRUM",                                    categoria: "Profissionalizante",      carga: "6h",   ano: "2025" },
+    { nome: "Fundamentos em Programação com Linguagem C#",            categoria: "Profissionalizante",      carga: "120h",  ano: "2022" },
+    
   ],
 
   /*  Projetos */
   projetos: [
     {
       nome:       "One Piece Bio",
-      emoji:      "🏴‍☠️",
+      imagem:      "./img/projetos/Pj_OP.png",
       categoria:  "Web",
       desc:       "Projeto de Bootcamp onde apresenta os principais personagens da Série One piece com botões que trazem uma pequena descrição de cada um",
       tecnologias:["HTML", "CSS", "JavaScript"],
@@ -57,7 +60,7 @@ const DADOS = {
     },
     {
       nome:       "JDM Motors",
-      emoji:      "🚗",
+      imagem:      "./img/projetos/jdm_M.png",
       categoria:  "Web",
       desc:       "Pagina Web estática",
       tecnologias:["HTML", "CSS","Bootstrap5" ],
@@ -68,7 +71,7 @@ const DADOS = {
     },
     {
       nome:       "API Codewave",
-      emoji:      "📊",
+      imagem:      "./img/projetos/API_1S.png",
       categoria:  "Projeto Academico",
       desc: "Projeto desenvolvido durante o 1º Semestre do curso onde foi realizado um levantamento de dados do Censo na cidade de São José dos campos onde na Filtragem de dados com a biblioteca Pandas",
       tecnologias:["HTML", "CSS", "Python", "Pandas", "Plotly", "Flask", "Mysql"],
@@ -77,13 +80,13 @@ const DADOS = {
       ]
     },
     {
-      nome:       "Janosys SIGNA [EM DESENVOLVIMENTO]",
-      emoji:      "📝",
+      nome:       "JanoSys SIGNA <br> [Em Desenvolvimento]",
+      imagem:      "./img/projetos/Signa.png",
       categoria:  "Projeto Academico",
-      desc:       "Sistema de Gerenciamento ",
-      tecnologias:["HTML", "CSS", "JavaScript", "Mysql"],
+      desc:       "Sistema de Gerenciamento de normas e notas com níveis de acesso",
+      tecnologias:["HTML", "CSS", "TypeScript", "React"],
       links: [
-        { icone: "bi-github", texto: "GitHub", url: "#" }
+        { icone: "bi-github", texto: "GitHub", url: "https://github.com/T13rz/Janosys-Project-Akaer" }
       ]
     }
   ],
@@ -95,10 +98,11 @@ const DADOS = {
     { nome: "JavaScript",  icone: "bi-filetype-js"   },
     { nome: "Python",      icone: "bi-filetype-py"   },
     { nome: "MySQL",       icone: "bi-database"      },
-    { nome:"Typescript",   icone: "bi-typescript"},
+    { nome:"TypeScript",   icone: "bi-filetype-tsx"  },
     { nome: "Git",         icone: "bi-git"           },
     { nome: "Docker",      icone: "bi-boxes"         },
-    { nome: "React",       icone: "bi-box"           }
+    { nome: "React",       icone: "bi-box"           },
+    { nome: "AWS",         icone: "bi-amazon"        }
   ],
 
   //Soft skills 
@@ -309,7 +313,7 @@ function renderProjetos(lista) {
     }
 
     card.innerHTML = `
-      <div class="projeto-thumb">${p.emoji || "💻"}</div>
+      <div class="projeto-thumb">${p.imagem? `<img src="${p.imagem}" alt="${p.nome}">`: (p.emoji || "💻")} </div>
       <div class="projeto-body">
         <span class="projeto-categoria">${p.categoria}</span>
         <h3 class="projeto-nome">${p.nome}</h3>
